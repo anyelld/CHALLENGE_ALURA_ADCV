@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header_img">
+            <img src="./assets/Logo.png" alt="Logo de Alura">
+        </div>
+    </header>
+    <main>
+       <div class="container">
+        
+          <div class="left-box">
+              <textarea id="inputText" placeholder="Ingrese el texto aqui" oninput="validateInput()"></textarea>
+              <div class="buttons">
+                  <button onclick="encryptText()">Encriptar</button>
+                  <button onclick="decryptText()">Desencriptar</button>
+               </div>
+                </div>
+                <div class="right-box">
+                 <div id="outputContainer">
+                    <img id="noMessageImage" src="./assets/Muñeco.png" alt="Ningún mensaje fue encontrado">
+                    <p id="noMessageText">Ningún mensaje fue encontrado</p>
+                    <textarea id="outputText" readonly></textarea>
+                    <button onclick="copyText()">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+    <footer class="footer">
+        <p>By Daniela Castellanos - Challenge Alura - 2024</p>
+    </footer>
+</body>
+</html>
